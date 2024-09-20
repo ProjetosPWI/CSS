@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom In/Out</title>
+    <style>
+        .zoom {
+            width: 120px;
+            height: 120px;
+            background-color: #ff9800;
+            margin: 50px;
+            animation: zoomInOut 2.5s infinite;
+        }
+
+        @keyframes zoomInOut {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="zoom"></div>
+</body>
+</html>
