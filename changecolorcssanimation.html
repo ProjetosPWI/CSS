@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de Mudança de Cor</title>
+    <style>
+        .mudar-cor {
+            width: 100px;
+            height: 100px;
+            background-color: #9c27b0;
+            animation: mudarCor 3s infinite;
+        }
+
+        @keyframes mudarCor {
+            0% {
+                background-color: #9c27b0;
+            }
+            50% {
+                background-color: #2196f3;
+            }
+            100% {
+                background-color: #9c27b0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mudar-cor"></div>
+</body>
+</html>
