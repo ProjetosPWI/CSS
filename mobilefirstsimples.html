@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Layout Responsivo</title>
+    <style>
+        /* Estilos Mobile-First (para dispositivos móveis) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para tablets (min-width: 768px) */
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+    }
+    
+    .content {
+        flex: 2;
+        margin-right: 10px;
+    }
+
+    .sidebar {
+        flex: 1;
+        margin-right: 0;
+    }
+}
+
+/* Estilos para desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .header {
+        font-size: 2em;
+    }
+
+    .main-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        font-size: 1.2em;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Meu Site Responsivo</h1>
+    </header>
+    <main class="main-content">
+        <section class="content">
+            <h2>Bem-vindo!</h2>
+            <p>Esse é um exemplo de layout responsivo.</p>
+        </section>
+        <aside class="sidebar">
+            <h2>Informações</h2>
+            <p>Essa sidebar será movida abaixo do conteúdo principal em telas menores.</p>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+</body>
+</html>
