@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito de Digitação</title>
+    <style>
+        .texto {
+            font-family: 'Courier', monospace;
+            font-size: 24px;
+            white-space: nowrap;
+            border-right: 3px solid;
+            width: 0;
+            overflow: hidden;
+            animation: digitar 4s steps(30, end) 1s forwards;
+        }
+
+        @keyframes digitar {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="texto">Exemplo de animação de digitação!</div>
+</body>
+</html>
